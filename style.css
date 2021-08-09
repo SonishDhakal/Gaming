@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.content{
+    width: 100%;
+    height:100vh ;
+    background-image: url('back.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+
+nav{
+    display: flex;
+    height: 50px;
+}
+
+ul{
+    display: flex;
+    margin-right: 4px;
+}
+
+.logo img{
+    width: 250px;
+    margin-top: -27px;
+}
+
+.m{
+    margin-left: 45%
+}
+
+.menu{
+    list-style: none;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 17px;
+    
+    
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    
+    
+}
+
+.m ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #15fbf0;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.m ul li:hover::after{
+    width: 100%;
+}
+
+.mid{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    
+}
+
+h1{
+    font-size: 50px;
+    color: #08e4d0;
+}
+
+.p{
+    position: absolute;
+    top: 50%;
+    color: white;
+    left: 32%;
+    line-height: 68px;
+}
+
+
+button{
+    background: transparent;
+    border: 2px solid #00c9ff;
+    border-radius: 5px;
+    padding: 12px 20px;;
+    color: white;
+    margin-top: 12px;
+    font-weight: 600;
+    transition: 1s;
+
+    
+
+}
+
+button:hover{
+    background: #00c9ff;
+    box-shadow :0 0 20px 0 #00c9ff
+
+}
+
+.animate{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    bottom: 0%
+}
+
+.animate img{
+    width: 70px;
+    animation: animation 7s linear infinite;
+}
+
+@keyframes animation {
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50%{
+        
+        opacity: 1;
+    }
+
+    75%{
+        
+        opacity: 0.7;
+    }
+
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+    
+}
+
+.animate img:nth-child(1){
+    animation-delay: 2s;
+    width: 35px;
+}
+
+.animate img:nth-child(2){
+    animation-delay: 3s;
+}
+
+.animate img:nth-child(3){
+    animation-delay: 7s;
+    width: 45px;
+}
+
+.animate img:nth-child(4){
+    animation-delay: 9s;
+    width: 55px;
+}
+
+.animate img:nth-child(5){
+    animation-delay: 5s;
+    width: 65px;
+}
